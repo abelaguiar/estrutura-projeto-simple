@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-include "vendor/autoload.php";
+require_once dirname(__DIR__)."/vendor/autoload.php";
 
 use \PlugRoute\PlugRoute;
 
@@ -16,6 +16,6 @@ header("Access-Control-Allow-Headers: Content-Type");
 
 $route = new PlugRoute();
 
-include 'app/routes.php';
+require_once dirname(__DIR__)."/config/routes.php";
 
 $route->on();

@@ -11,7 +11,10 @@
     ],
     "require": {
         "php": "^7.0",
-        "erandir/plug-route": "^2.8"
+        "erandir/plug-route": "^2.8",
+        "vlucas/phpdotenv": "^3.3",
+        "doctrine/orm": "^2.6",
+        "doctrine/dbal": "^2.9"
     },
     "autoload": {
         "psr-4": {
